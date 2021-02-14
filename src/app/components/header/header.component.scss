@@ -1,7 +1,8 @@
 #navbar {
-  background-color: #242424;
   width: 100%;
   color: #fff;
+  position: relative;
+  z-index: 500;
 
   .navbar-content-wrapper {
     display: flex;
@@ -10,4 +11,12 @@
     align-items: center;
     margin: auto;
   }
+}
+
+.navbar-background-general {
+  background-color: var(--primary-color);
+}
+
+.navbar-background-home {
+  background-color: transparent;
 }
