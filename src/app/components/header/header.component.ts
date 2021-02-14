@@ -12,10 +12,18 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router) { 
     this.router = router
     this.currentRoute = this.router.url
+
+    router.events.subscribe(val => {
+      if (this.router.url != "") {
+        return this.currentRoute = this.router.url;
+      } 
+        return this.currentRoute = "home";
+    });
   }
 
   getClass() {
     let classList = '';
+    console.log(this.currentRoute)
     if(this.currentRoute === '/') {
       return classList = 'navbar-background-home'
     }
