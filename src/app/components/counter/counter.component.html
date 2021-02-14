@@ -1,6 +1,6 @@
 <div class="counter-wrapper">
   <div class="content-container">
-    <p>Current count is: <span>{{ currentCount }}</span></p>
+    <p>Current count is: <span [ngStyle]="{'color': (currentCount < 0) ? '#f70000' : '#00b900'}">{{ currentCount }}</span></p>
     <div class="buttons-wrapper">
       <button class="increment-button" (click)="incrementer()">
         Increment by 1
@@ -9,5 +9,8 @@
         Decrement by 1
       </button>
     </div>
+    <button class="reset-count-button" (click)="countReset()">
+      Reset count
+    </button>
   </div>
 </div>
