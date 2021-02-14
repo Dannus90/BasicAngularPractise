@@ -3,6 +3,7 @@
   color: #fff;
   position: relative;
   z-index: 500;
+  transition: background-color 0.2s linear;
 
   .navbar-content-wrapper {
     display: flex;
@@ -22,10 +23,17 @@
       li {
         text-decoration: none;
         list-style: none;
+        transition: background-color 0.2s ease-in-out;
+        color: #fff;
 
         a {
           color: #fff;
           padding: 0.5rem 1rem;
+        }
+
+        :hover {
+          background-color: rgba(0, 0, 0, 0.05);
+          border-radius: 5px;
         }
       }
     }
@@ -34,6 +42,7 @@
 
 .navbar-background-general {
   background-color: var(--primary-color);
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
 }
 
 .navbar-background-home {

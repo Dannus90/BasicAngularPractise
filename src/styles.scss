@@ -4,6 +4,12 @@
   --main-font-stack: "Roboto", sans-serif;
   --primary-color: #0da139;
   --main-linear-color: linear-gradient(145deg, #0da139, #6bff7b);
+  --main-text-color: #444;
+  --card-shadow: 0 6px 6px rgb(10 16 20 / 15%), 0 0 52px rgb(10 16 20 / 12%);
+  --button-primary-color: #009aff;
+  --button-warning-color: #ff3959;
+  --button-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  --button-hover-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -15,7 +21,7 @@
 body {
   font-family: var(--main-font-stack);
   letter-spacing: 0.035rem;
-  color: #fff;
+  color: var(--main-text-color);
 }
 
 a {

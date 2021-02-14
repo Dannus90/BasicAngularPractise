@@ -23,11 +23,9 @@ export class HeaderComponent implements OnInit {
 
   getClass() {
     let classList = '';
-    console.log(this.currentRoute)
     if(this.currentRoute === '/') {
       return classList = 'navbar-background-home'
     }
-    
     return classList = 'navbar-background-general';
   }
 

@@ -14,8 +14,9 @@
   transform: skewY(8deg);
   transform-origin: 100%;
   top: 0;
+  transition: background-image 0.2s linear;
 }
 
 .hero-color {
-  background: var(--main-linear-color);
+  background-image: var(--main-linear-color);
 }

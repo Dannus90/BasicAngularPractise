@@ -1,0 +1,42 @@
+.counter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content-container {
+    padding: 1.5rem;
+    border-bottom: 1px solid #ccc;
+    box-shadow: var(--card-shadow);
+
+    p {
+      text-align: center;
+      margin-bottom: 1.2rem;
+      font-size: 1.2rem;
+    }
+
+    .increment-button,
+    .decrement-button {
+      border: none;
+      outline: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      margin: 0 0.5rem;
+      cursor: pointer;
+      color: #fff;
+      font-size: 0.95rem;
+      box-shadow: var(--button-box-shadow);
+
+      :hover {
+        box-shadow: var(--hover-hover-button-box-shadow);
+      }
+    }
+
+    .increment-button {
+      background-color: var(--button-primary-color);
+    }
+
+    .decrement-button {
+      background-color: var(--button-warning-color);
+    }
+  }
+}

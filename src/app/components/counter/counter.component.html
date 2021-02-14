@@ -1,1 +1,13 @@
-<p>counter works!</p>
+<div class="counter-wrapper">
+  <div class="content-container">
+    <p>Current count is: <span>{{ currentCount }}</span></p>
+    <div class="buttons-wrapper">
+      <button class="increment-button" (click)="incrementer()">
+        Increment by 1
+      </button>
+      <button class="decrement-button" (click)="decrementer()">
+        Decrement by 1
+      </button>
+    </div>
+  </div>
+</div>
