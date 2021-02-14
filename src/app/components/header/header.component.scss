@@ -48,3 +48,42 @@
 .navbar-background-home {
   background-color: transparent;
 }
+
+.hero-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  min-height: 480px;
+  height: 80vh;
+  max-height: 560px;
+  box-sizing: border-box;
+  padding: 48px 48px 32px;
+  overflow: hidden;
+  transform: skewY(8deg);
+  transform-origin: 100%;
+  top: 0;
+  transition: background-image 0.2s linear;
+  z-index: -5;
+}
+
+.hero-color {
+  background-image: var(--main-linear-color);
+}
+
+.header-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 500px;
+  margin: 0 auto -32px;
+  padding: 48px 0 0;
+  color: #fff;
+}
+
+.no-header-section-container-display {
+  display: none;
+}

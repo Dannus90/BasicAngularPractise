@@ -2,8 +2,7 @@
   background-image: var(--main-linear-color);
   min-height: 400px;
   width: 100%;
-  position: relative;
-  z-index: 0;
+  bottom: 0;
 
   .inner-content {
     display: flex;
