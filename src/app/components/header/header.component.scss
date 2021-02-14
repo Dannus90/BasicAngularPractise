@@ -10,6 +10,25 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
+
+    ul {
+      text-decoration: none;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+
+      li {
+        text-decoration: none;
+        list-style: none;
+
+        a {
+          color: #fff;
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
   }
 }
 

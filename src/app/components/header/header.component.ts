@@ -11,7 +11,6 @@ export class HeaderComponent implements OnInit {
 
   constructor(private router: Router) { 
     this.router = router
-
     this.currentRoute = this.router.url
   }
 

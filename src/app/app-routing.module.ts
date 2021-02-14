@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { homeRoutes } from '../routes/routes';
+import { homeRoutes, listRoutes, counterRoutes } from '../routes/routes';
 
 const routes: Routes = [
-  { ...homeRoutes}
+  homeRoutes,
+  listRoutes,
+  counterRoutes
 ];
 
 @NgModule({
